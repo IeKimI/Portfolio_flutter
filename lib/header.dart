@@ -46,10 +46,11 @@ class HeaderScreen extends StatelessWidget {
                     .shimmer(primaryColor: Coolers.accentColor),
                 30.heightBox,
                 SocialAccounts(),
+                (context.isMobile ? 30.heightBox : 0.heightBox),
                 VxDevice(
                   mobile: HStack(
                     [
-                      30.heightBox,
+                      50.heightBox,
                       RaisedButton(
                         onPressed: () {
                           Navigator.push(
@@ -148,6 +149,9 @@ class HeaderScreen extends StatelessWidget {
       ]))
           .size(context.screenWidth, context.percentHeight * 60)
           .color(Coolers.secondaryColor)
+          .bgImage(DecorationImage(
+              image: new ExactAssetImage('assets/backgroundpic.png'),
+              fit: BoxFit.contain))
           .make(),
     );
   }

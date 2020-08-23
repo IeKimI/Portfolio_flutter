@@ -27,77 +27,75 @@ class _ContentPageState extends State<ContentPage> {
         Container(
             padding: EdgeInsets.all(30.0),
             child: GridView.count(
-              crossAxisCount: 4,
+              crossAxisCount: (context.isMobile ? 2 : 4),
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
               children: <Widget>[
                 Container(
-                  child: Image.network(
-                    baseUrl + 'Clock.JPG',
-                  ),
+                  child: Image.asset(baseUrl + 'Clock.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Family.JPG'),
+                  child: Image.asset(baseUrl + 'Family.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Father.JPEG'),
+                  child: Image.asset(baseUrl + 'Father.JPEG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Fix.JPG'),
+                  child: Image.asset(baseUrl + 'Fix.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Frace3.JPG'),
+                  child: Image.asset(baseUrl + 'Frace3.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'France1.JPG'),
+                  child: Image.asset(baseUrl + 'France1.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'France2.JPG'),
+                  child: Image.asset(baseUrl + 'France2.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'France3.JPG'),
+                  child: Image.asset(baseUrl + 'France3.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'France4.JPG'),
+                  child: Image.asset(baseUrl + 'France4.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(
+                  child: Image.asset(
                     baseUrl + 'Grandpa.png',
                   ),
                   decoration: BoxDecoration(
@@ -106,189 +104,189 @@ class _ContentPageState extends State<ContentPage> {
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'LP.JPG'),
+                  child: Image.asset(baseUrl + 'LP.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'MT.JPG'),
+                  child: Image.asset(baseUrl + 'MT.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'NY.JPG'),
+                  child: Image.asset(baseUrl + 'NY.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint1.JPG'),
+                  child: Image.asset(baseUrl + 'Paint1.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint2.JPG'),
+                  child: Image.asset(baseUrl + 'Paint2.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint3.JPG'),
+                  child: Image.asset(baseUrl + 'Paint3.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint4.JPG'),
+                  child: Image.asset(baseUrl + 'Paint4.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint5.JPG'),
+                  child: Image.asset(baseUrl + 'Paint5.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint6.JPG'),
+                  child: Image.asset(baseUrl + 'Paint6.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint7.JPG'),
+                  child: Image.asset(baseUrl + 'Paint7.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint8.JPG'),
+                  child: Image.asset(baseUrl + 'Paint8.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paint9.JPG'),
+                  child: Image.asset(baseUrl + 'Paint9.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paris.JPG'),
+                  child: Image.asset(baseUrl + 'Paris.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paris2.JPG'),
+                  child: Image.asset(baseUrl + 'Paris2.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Paris3.JPG'),
+                  child: Image.asset(baseUrl + 'Paris3.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'photoshop.jpg'),
+                  child: Image.asset(baseUrl + 'photoshop.jpg'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Rain.JPG'),
+                  child: Image.asset(baseUrl + 'Rain.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Sketch1.JPG'),
+                  child: Image.asset(baseUrl + 'Sketch1.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Sketch2.JPG'),
+                  child: Image.asset(baseUrl + 'Sketch2.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Ski.JPG'),
+                  child: Image.asset(baseUrl + 'Ski.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Sunset.JPG'),
+                  child: Image.asset(baseUrl + 'Sunset.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'VA1.JPG'),
+                  child: Image.asset(baseUrl + 'VA1.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'VA2.JPG'),
+                  child: Image.asset(baseUrl + 'VA2.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'VA3.JPG'),
+                  child: Image.asset(baseUrl + 'VA3.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'VA4.JPG'),
+                  child: Image.asset(baseUrl + 'VA4.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'VA5.JPG'),
+                  child: Image.asset(baseUrl + 'VA5.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 Container(
-                  child: Image.network(baseUrl + 'Patin10.JPG'),
+                  child: Image.asset(baseUrl + 'Patin10.JPG'),
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(10),
