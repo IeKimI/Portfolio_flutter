@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://IeKimI.github.io/Portfolio_flutter",
   "directories": {
+    "web": "web",
     "lib": "lib",
     "test": "test"
   },
