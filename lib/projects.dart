@@ -369,7 +369,7 @@ const _images = [
   baseUrl + 'Sudoku.PNG',
   baseUrl + 'Pathfinding.png',
   baseUrl + 'Jarvis.PNG',
-  baseUrl + 'EriKimcheese.png',
+  baseUrl + 'EriKimcheese.jpeg',
   baseUrl + 'Kimovie.PNG',
 ];
 int currentIndexPage = 0;
