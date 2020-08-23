@@ -357,11 +357,11 @@ const descriptions = [
 ];
 
 const summary = [
-  "[A quick summary of Backtracking Algorithm]\n If it is found that the current number cannot be a solution, it backtracks and tries the next number. This is more efficient than trying eveyr single possible combination one by one.",
+  "[A quick summary of Backtracking Algorithm]\n If it is found that the current number cannot be a solution, it backtracks and tries the next number. This is more efficient than trying evey single possible combination one by one. \nThis program goes through the steps as follows: \n - Loop through values 1 to 9 and if it is valid, add the number into the board, if not, it backtracks and the last element is reset to 0.\n     Q. How do you check if the number is valid? \n         -> Check if the number that is just put in is valid by checking each row and column. \n              ** If any element in a row or column is equal to the number that is just added in, return false meaning it is invalid. ",
   "[A quick summary of A* search Algorithm]\n  -> Starting from a start node, it finds the shortest path to the end node f(n) = g(n) + h(n)\n  g(n): distance from the start node to n \n  h(n): heuristic-the shortest distance from n to the end \n  -> It uses a priority queue to perform the repeated selection of the shortest path. \n  At each step of the algorithm, the node with the lowest f(n) value is removed from the queue, the f and g values of its neighbors are updated accordignly, and these neighbors are added to the queue. \n  The algorithm continues until it reaches the lowest f value in the queue - until the queue is empty.",
   "Inspired by Jarvis featured in Marvel, I have coded a few commands as follows: \n - Open chrome\n - Open youtube, github, or facebook \n - Take notes\n - Search on Wikipedia\n - Search on Google",
-  "This is the first app I made using dart/flutter. \nBeing indecisve on what to cook for meals have made me think of this idea and following some tutorials on Youtube, I implemented the Edamam API and created this app.",
-  "You can search the movie title and get the information or just take a look at popular and recent movies on the home screen."
+  "This is the first app I made using dart/flutter. \nBeing indecisve on what to cook for meals made me think of making an app that we can use to search recipes. \nFollowing some tutorials on Youtube, I implemented the Edamam API and designed this app. \n Things I learned from this project: \n   - How to implement the API \n   - Fetching & Parsing JSON \n   - UI Design in Flutter",
+  "This is the second app I made suing dart/flutter. \nThe home page consists of search bar and recent/popular movies. \nYou can search the movie title or just tap the movie posters on the home page to get the information such as: \n - Rating \n - Overview \n - Trailer"
 ];
 const baseUrl = "assets/";
 
@@ -414,15 +414,18 @@ class _ContentPageState extends State<ContentPage> {
                                   color: Color(0xff96737E)),
                             ),
                             SizedBox(
-                              height: 50,
+                              height: 30,
                             ),
-                            new Text(
-                              titles[i],
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.bold),
+                            Container(
+                              padding: EdgeInsets.all(10),
+                              child: new Text(
+                                titles[i],
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                             SizedBox(
                               height: 20,
