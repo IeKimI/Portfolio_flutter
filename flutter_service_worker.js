@@ -9,7 +9,7 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"manifest.json": "8b2b4e9e7a11c9477144e765c5cfb417",
+"manifest.json": "58803dac52b45633ee321b994653b1b3",
 "assets/AssetManifest.json": "3d0de8a9ed9e3b31202cb1185943a907",
 "assets/NOTICES": "58bf6de13fd03d77d67edce8aa18e7af",
 "assets/FontManifest.json": "7aaf3996738086bbd796613e14ef9e45",
