@@ -8,10 +8,6 @@
   "description": "A new Flutter project.",
   "orientation": "portrait-primary",
   "prefer_related_applications": false,
-  "homepage": "https://IeKimI.github.io/Portfolio_flutter",
-  "scripts": {
-    "deploy": "gh-pages -d web"
-  },
 
   "icons": [
     {
