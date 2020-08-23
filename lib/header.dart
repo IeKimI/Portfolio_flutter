@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:velocity_x/velocity_x.dart';
+import 'package:web_portfolio/Artworks.dart';
 import 'package:web_portfolio/Coolors.dart';
 import 'package:web_portfolio/projects.dart';
 
@@ -46,7 +47,7 @@ class HeaderScreen extends StatelessWidget {
                 30.heightBox,
                 SocialAccounts(),
                 VxDevice(
-                  mobile: VStack(
+                  mobile: HStack(
                     [
                       30.heightBox,
                       RaisedButton(
@@ -66,6 +67,21 @@ class HeaderScreen extends StatelessWidget {
                         shape: Vx.roundedSm,
                         hoverColor: Vx.purple700,
                       ).h(50),
+                      10.widthBox,
+                      RaisedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ArtScreen()),
+                          );
+                        },
+                        child:
+                            "Artworks".text.color(Colors.black).semiBold.make(),
+                        color: Coolers.accentColor,
+                        shape: Vx.roundedSm,
+                        hoverColor: Vx.purple700,
+                      ).h(50),
                     ],
                   ),
                   web: Container(
@@ -81,6 +97,24 @@ class HeaderScreen extends StatelessWidget {
                             );
                           },
                           child: "Explore Projects"
+                              .text
+                              .color(Colors.black)
+                              .semiBold
+                              .make(),
+                          color: Coolers.accentColor,
+                          shape: Vx.roundedSm,
+                          hoverColor: Colors.white,
+                        ).h(50),
+                        10.widthBox,
+                        RaisedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ArtScreen()),
+                            );
+                          },
+                          child: "Artworks"
                               .text
                               .color(Colors.black)
                               .semiBold
